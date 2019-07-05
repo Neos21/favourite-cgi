@@ -1,0 +1,251 @@
+/*　挨拶しちゃ朗　スタイルシート　*/
+
+/*　スタイルシートの知識がない人は触らない方がいいかもしれません。でもこの機会に勉強してみてはいかがでしょうか。　*/
+
+/*　from DFJ
+　　http://www.fromdfj.net/
+　　あたりを読むと勉強になりますよ。　*/
+
+/*　テーブルの色の設定はこのファイルの一番下の方で設定できます　*/
+
+
+
+/*　ここより下がスタイルシートの記述です　*/
+
+/*　すべての要素…文字の線の太さ、文字スタイル、文字の大きさを指定　*/
+
+*
+{
+font-weight:normal;
+font-style:normal;
+font-size:10pt;
+}
+
+/*　body要素全体の文字色と背景画像・背景色…背景画像を使用しない時は、background-imageの行を削除してください。 */
+
+body
+{
+color:#990000;
+background-color:#ffffff;
+background-image:url(orange.gif);
+}
+
+/*　見出し　レベル1と2　（タイトル画像、入力欄下の「管理人からのメッセージ」　*/
+
+h1,h2
+{
+text-align:center;
+font-weight:bold;
+font-size:12pt;
+}
+
+/*　表についての指定　*/
+
+table,tr,th,td
+{
+border-collapse:collapse;
+border:1px black solid;
+}
+
+table
+{
+width:90%;
+margin-left:5%;
+margin-right:5%;
+clear:right;
+}
+
+th,td
+{
+padding:0.2em;
+}
+
+th
+{
+font-weight:bold;
+color:black;
+}
+
+caption
+{
+padding-bottom:0.5em;
+}
+
+/*　入力欄などの文字色、背景色、境界線　*/
+
+input,select,textarea
+{
+color:#0f642d;
+background-color:#ffffcc;
+border:#4d9900 1px solid;
+}
+
+/*　画像…境界線を一切表示しない設定にしてあります　*/
+
+img
+{
+border:0;
+}
+
+/*　アンカー（リンク部分）　*/
+a
+{
+color:#990000;
+text-decoration:underline;
+}
+
+/*　アンカー（リンク部分）マウスが上に来た時　*/
+
+a:hover
+{
+color:#990000;
+background-color:white;
+text-decoration:none;
+}
+
+
+/*　以下はクラス属性、ID属性に関するスタイル指定です。ソースを見て分かる人だけ触りましょう。　*/
+
+.navi,#submit,.navi2,.logdownload ul,.ScriptAuthor,.back
+{
+list-style:none;
+margin-left:0;
+padding-left:0;
+}
+
+.logdownload
+{
+margin-left:5%;
+margin-right:5%;
+border:1px black dashed;
+}
+
+.navi li,.navi2 li
+{
+display:inline;
+}
+
+#submit
+{
+float:right;
+}
+
+#submit li
+{
+display:inline;
+}
+
+#submit li,.navi2,.logdownload ul
+{
+text-align:center;
+}
+
+.input
+{
+background-color:#ffcc00;
+width:28em;
+margin-left:5%;
+padding:1em 1em 0 1em;
+border:1px black solid;
+}
+
+.input dt
+{
+float:left;
+width:5em;
+text-align:right;
+clear:left;
+}
+
+.input dd
+{
+margin-left:5.2em;
+}
+
+.number,.icon,.url,.kaisu,.shoshin,.adminmessage p,.totalcount,.caution,.ranking,.tokoshasu,.rule
+{
+text-align:center;
+}
+
+.adminmessage
+{
+clear:right;
+}
+
+.adminmessage p
+{
+color:black;
+background-color:white;
+padding:0.3em;
+font-weight:bold;
+border:1px black dashed;
+}
+
+.setsumei
+{
+margin-left:10%;
+margin-right:10%;
+}
+
+.ScriptAuthor
+{
+text-align:right;
+}
+
+.password
+{
+text-align:right;
+}
+
+.password dt,.password dd
+{
+margin-left:0;
+margin-right:0.1em;
+display:inline;
+}
+
+.shoshinshikaku
+{
+background-color:white;
+text-align:center;
+}
+
+.iconlist,.joren,.iconlist tr,.joren tr,.iconlist th,.iconlist td,.joren th,.joren td
+{
+border:0;
+}
+
+/* ################################################# */
+/* ################################################# */
+
+/*　挨拶一覧の背景色1　*/
+
+.line1
+{
+background-color:#ffffcc;
+}
+
+/*　挨拶一覧の背景色2　*/
+
+.line2
+{
+background-color:#ffcc33;
+}
+
+/*　↑line1とline2の背景色で交互に表示されます↑　*/
+
+/*　テーブルのヘッダー（一番上の）部分の文字色と背景色　*/
+
+.header
+{
+color:#000000;
+background-color:#99CC00;
+}
+
+/*　お祝いメッセージの文字色と背景色　*/
+
+.oiwai
+{
+color:#ffffff;
+background-color:#CC0000;
+}
